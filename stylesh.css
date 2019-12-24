@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.body{
+	font-family: "Poppins";
+}
+main{
+	background: radial-gradient(rgba(33,25,96,1), rgba(11,16,35,1));	
+	color:white;
+}
+.banner{
+	width: 100%;
+	height: 40vh;
+	position: relative;
+}
+.banner img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.author{
+	font-family: "Montserrat";
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-70%);
+	color: white;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	text-align: center;
+}
+.author h1{
+	font-size: 42px;
+	animation: rise 0.5s ease;
+}
+.author h3{
+	font-family: "White Angelica";
+	padding: 10px 0px;
+	font-size:30px;
+}
+.story ,.my-work{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+	padding: 80px 0px;
+}
+.story-description,.work-description{
+	width: 70%;
+}
+.story-description h3,.work-description h3{
+	padding-bottom: 30px;
+	font-size: 36px;	
+	font-family: "Montserrat Thin";
+	letter-spacing: 2;
+	color: lightblue;
+}
+.story-description p,.work-description p{
+	font-size: 16px;
+	padding: 20px;
+	font-family: "Poppins";
+}
+.profile{
+	width: 300px;
+	height: 500px;
+}
+.profile img{
+	width: 100%;
+	height: 100%;
+}
+.work-gallery{
+	display: grid;
+	grid-template-columns: repeat(2,200px);
+}
+.work-gallery img{
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes rise{
+	0%{
+		transition: translateY(-50%);
+	}
+	100%{
+		transition: translateY(0%);
+	}
+}

@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: Angel
+	src: url("./Fonts/white_angelica/WhiteAngelica.ttf");
+}
+
+@font-face{
+	font-family: MontLight
+	src: url("./Fonts/montserrat/MontserratAlternates-Light.otf");
+}
+
+body{
+	font-family: "White Angelica";
+}
+.portfolio{
+	color: lightgreen;
+	background: radial-gradient(rgba(43,55,96,1), rgba(11,16,35,1));
+}
+nav{
+	min-height: 10vh;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+}
+.logo{
+	font-family: "Poppins"; 
+	font-size:30px;
+	color:skyblue;
+	z-index: 2;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.page{
+	min-height: 90vh;
+	display: grid;
+	grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero{
+	overflow: hidden;
+	height: 500px;
+	align-self: center;
+	display: flex;
+	justify-self : center;
+}
+
+.hero img{
+	height: 500px;
+	transition: transform 0.3s ease-out;
+	cursor:pointer;
+}
+
+
+.model-left{
+	transform: translate(0%, -10%);
+}
+.model-right{
+	transform: translate(0%, 10%);
+}
+
+.hero:hover .model-left{
+	transform: translate(0%,0%);
+}
+
+.hero:hover .model-right{
+	transform: translate(0%,0%);
+}
+
+.details{
+	grid-column: 2/3;
+	align-self: end;
+}
+.details h1{
+	font-size: 45px;
+	font-family: "Montserrat";
+}
+.details h2{
+	font-size:35px;
+	padding:0px 0px;
+}
+.details p{
+	font-family: "Montserrat Thin";
+	font-size: 20px;
+	padding:20px 0px 50px 20px;
+}
+
+.pages{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+}
+
+.pages > div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: "Montserrat Thin";
+}
+.pages h3{
+	font-size: 24px;
+	padding: 20px;
+	color: white;
+}
+.pages svg{
+	cursor: pointer;
+	opacity: 0.5;
+	transform: scale(2);
+}
+.pages svg:hover{
+	animation: dot 0.5s ease-in-out infinite alternate; 
+}
+.pages svg.active{
+	opacity: 1;
+}
+
+@keyframes dot{
+	0%{
+		transform: scale(2);
+	}
+	100%{
+		transform: scale(4);
+	}
+}
+.circlex{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	background: white;
+	border-radius: 50%;
+	left: 65px;
+	top: 22px;
+	opacity: 1;
+	z-index: 1;
+}
