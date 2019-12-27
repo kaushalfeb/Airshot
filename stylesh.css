@@ -10,7 +10,7 @@
 	font-family: "Poppins";
 }
 main{
-	background: radial-gradient(rgba(33,25,96,1), rgba(11,16,35,1));	
+	background: linear-gradient(to right,#6e48aa,#9d50bb);	
 	color:white;
 }
 .banner{
@@ -23,6 +23,7 @@ main{
 	width: 100%;
 	object-fit: cover;
 	object-position: top;
+	opacity: 0.6;
 }
 .author{
 	font-family: "Montserrat";
