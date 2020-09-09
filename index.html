@@ -3,54 +3,63 @@
 <head>
 	<title>Airshot</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="fullpage.css">
+	<script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
 	<div class="portfolio">
+
 	<header>
 		<nav>
 			<h3 class="logo">Airshot</h3>
 			<img src="./men1.png" alt="Burger">
 		</nav>
+	</header>	
+	<div id="fullpage">	
 
-		<main>
-			<section class="page photographer">
-			<div class="details">
-				<h1>Jenniffer Jones</h1>
-				<h2>Photographer</h2>
-				<p>31/12/2019</p>
+			<div class="section photographer">
+				<div class="details">
+					<h1>Jenniffer Jones</h1>
+					<h2>Photographer</h2>
+					<p>31/12/2019</p>
+				</div>
+				<div class="hero">
+					<a href="photo.html">	
+						<img class="model-left" src="./YelL.jpg" alt="Model Left"></a>
+					<a href="photo.html">
+						<img class="model-right" src="./YelR.jpg" alt="Model Right"></a>
+				</div>
 			</div>
-			<div class="hero">
-			<a href="photo.html">	<img class="model-left" src="./YelL.jpg" alt="Model Left"></a>
-			<a href="photo.html">
-				<img class="model-right" src="./YelR.jpg" alt="Model Right"></a>
-			</div>
-			</section>
 
-			<section class="page chef">
-			<div class="details">
-				<h1>Camilla Cabello</h1>
-				<h2>Singer</h2>
-				<p>15/05/2014</p>
-			</div>
+			<div class="section chef">
+				<div class="details">
+					<h1>Hannah Baker</h1>
+					<h2>Singer</h2>
+					<p>15/05/2014</p>
+				</div>
 			<div class="hero">
 				<a href="Muze.html"><img class="model-left" src="./redL.jpg" alt="Model Left"></a>
 				<a href="Muze.html">
 				<img class="model-right" src="./redR.jpg" alt="Model Right"></a>
 			</div>
-			</section>
-
-			<section class="page hairstyle">
-			<div class="details">
-				<h1>Barbara Brown</h1>
-				<h2>HairStylist</h2>
-				<p>30/9/2017</p>
 			</div>
-			<div class="hero">
-				<img class="model-left" src="./BarL.jpg" alt="Model Left">
-				<img class="model-right" src="./BarR.jpg" alt="Model Right">
-			</div>
-			</section>
 
+			<div class="section hairstyle">
+				<div class="details">
+					<h1>Barbara Brown</h1>
+					<h2>HairStylist</h2>
+					<p>30/9/2017</p>
+				</div>
+				<div class="hero">
+					<img class="model-left" src="./BarL.jpg" alt="Model Left">
+					<img class="model-right" src="./BarR.jpg" alt="Model Right">
+				</div>
+			</div>
+	</div>
+</div>
+
+<!--
 			<div class="pages">
 				<div class="page-1">
 					<h3>01</h3>
@@ -84,11 +93,22 @@
 					</svg>
 				</div>
 			</div>
-		</main>
-	</header>
-	</div>
-	<div class="circlex">
-		
-	</div>
+-->
+	
+
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				//options here
+				autoScrolling:true,
+				scrollHorizontally: true,
+				navigation: true,
+			
+			});
+		});
+
+	</script>
+<script type="text/javascript" src="fullpage.js"></script>
+
 </body>
 </html>
